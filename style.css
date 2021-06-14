@@ -362,12 +362,16 @@ text-align: center;
     height: 100%;
     width: 100%;
 }
+::selection{
+    color: rgb(255, 255, 255);
+    background-color: rgba(19, 7, 7, 0.376);
+}
 #status h6{
     font-size: 0.7rem;
     color: #c7b299;
 }
 #status{
-    background: linear-gradient(90deg, #211b19 0%, #4e3326 100%);
+    background: linear-gradient(#000000 0%, #0000008c 100%);
     width: 100%;
 height: inherit; 
 color: white;
