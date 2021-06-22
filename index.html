@@ -12,8 +12,10 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./contact.css">
+
+  <link rel="stylesheet" href="./style.css" id="indexlink">
+  <link rel="stylesheet" href="./contact.css" id="contactlink">
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
   <title>Design & Art</title>
@@ -72,6 +74,12 @@
         <li class="nav-item">
           <a class="nav-link aa" id="underconstruction" href="./about.html">About Us</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link aa themes" id="darkthe" href="#" onclick="darkmodeon()" >Dark Theme</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link aa  themes" id="lightthe"  href="#" onclick="lightmodeon()" >Light Theme</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -129,11 +137,13 @@
               Lorem ipsum dolor sit amet consecte</p>
 
 
-            <button data-toggle="modal" data-target="#staticBackdrop" style="width: 140px;
+            <button  id="aboutnavbtn"  style="width: 140px;
           height: 53px;
           
           " class="btn custombtn btn-outline-light my-4">
-              About Us
+          <a  href="./about.html">
+            About Us
+          </a>
             </button>
           </div>
         </div>
@@ -337,7 +347,7 @@
     <!-- second row end -->
     <!-- .................................load more .............................  -->
     <div  class="row customrow " id="loadmore">
-      <div class="col-lg-3  my-4 mx-0col-md-5 col-sm-5 col-11">
+      <div  class="col-lg-3  my-4 mx-0col-md-5 col-sm-5 col-11">
         <div class="card projectcard">
           <figure class="projectimg">
             <img src="./img/6.jpg" class=" img-fluid" alt="">
@@ -382,7 +392,7 @@
 
 
     </div>
-    <button class="btn btn-outline-dark  mx-auto my-5 d-block" id="loadbtn">Load More</button>
+    <button class="btn btn-outline-light  mx-auto my-5 d-block" id="loadbtn">Load More</button>
     <!-- .................................load more .............................  -->
 
   </section>
@@ -408,7 +418,7 @@
   <!-- video presentaion ending -->
 
   <!-- excellent for mobile devices -->
-  <section data-aos="slide-left" class="my-4 mx-0">
+  <section id="excellentformobile" data-aos="slide-left" class="my-4 mx-0">
     <div class="row my-4 customrow">
       <div class="col-xl-4 col-lg-4 col-md-12  ">
         <figure style="width: 100%;position: relative;">
@@ -667,7 +677,7 @@
 
               <form action="#">
 
-                <h5 class=" pl-2 mt-4 modal-title" style="color: #59879d;text-shadow: 1px 1px 1px black;"
+                <h5 class=" pl-2 mt-4 modal-title" style="color: #ffffff;text-shadow: 1px 1px 1px black;"
                   id="staticBackdropLabel">Contact Us</h5>
                 <div class="row">
                   <div id="fname" class="  custombefore nameing col-lg-6 col-xl-6 col-md-12 col-sm-12 col-12">
@@ -744,6 +754,25 @@
     </script>
   
   <script>
+let indexlink=document.getElementById('indexlink');
+let contactlink=document.getElementById('contactlink');
+
+function darkmodeon(){
+
+  indexlink.setAttribute("href", "./style.css");
+  contactlink.setAttribute("href", "./contact.css");
+
+}
+function lightmodeon(){
+
+  indexlink.setAttribute("href", "./stylelight.css");
+  contactlink.setAttribute("href", "./contactlight.css");
+
+}
+
+
+
+
 let underc=document.getElementById('underconstruction');
 let underc1=document.getElementById('underconstruction1');
 

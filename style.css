@@ -3,10 +3,12 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Kotta One', serif;
+ 
 }
 html,
 body {
     max-width: 100%;
+    background-color: #131111f6 !important;
     overflow-x: hidden;
 }
 li,a{
@@ -33,9 +35,9 @@ list-style: none !important;
         left: 0%;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.15);
+        background-color: rgba(0, 0, 0, 0.055);
         border-bottom: 2px solid white;
-        border-top: 2px solid white;
+       
         z-index: -2;
         transform: scale(1.2);
         opacity: 0;
@@ -49,8 +51,8 @@ list-style: none !important;
        
 }
 nav ul li a:hover{
-    color: var(--color);
-    color:  #c7b299;
+   
+    color:  #929292;
     font-size: 20px;
 }
 
@@ -123,6 +125,7 @@ nav{
     align-items: center;
     border: none;
     text-align:center;
+    background-color: #131111f6 !important;
     word-break: break-all;
 }
 .card h5{
@@ -136,6 +139,7 @@ nav{
     font-size: 56px;
     color: #555555;
     transition: 0.7s;
+    background-color: #131111f6 !important;
 }
 .servicescard::after{
     content: "";
@@ -152,13 +156,26 @@ nav{
     transition: 0.7s;
 }
 .sercol:hover .services{
-    color:  #c7b299;
+    color:  #eeeeee;
    
 
 }
 .sercol:hover .card h5{
-    color:  #c7b299;
+    color:  #fcfcfc;
    
+
+}
+.serbody p,.serbody h5{
+color: rgb(54, 53, 53);
+text-shadow: 1px 2px 1px rgb(0, 0, 0);
+transition: 1s;
+}
+.sercol:hover .serbody p{
+    text-shadow: 1px 2px 1px rgb(230, 230, 230);
+
+}
+.sercol:hover .serbody h5{
+    text-shadow: 1px 2px 1px rgb(230, 230, 230);
 
 }
 .sercol:hover .card::after{
@@ -176,7 +193,7 @@ nav{
 }
 .headingh{
     text-shadow: 1px 1px 1px black;
-    color: #d07d82;
+    color: #c2474f;
 }
 /* #c7b299; */
 /* ........................Serivices.....header bottom ending................  */
@@ -207,6 +224,13 @@ nav{
     font-size: 0.8rem;
     color: #d1d1d1;
 }
+#aboutnavbtn:hover#aboutnavbtn a{
+    color: black !important;
+}
+#aboutnavbtn a{
+    color: rgb(255, 255, 255);
+}
+
 .projectcard{
     box-shadow: -13px 16px 21px -9px black;
     background: #5c5b6f;
@@ -214,8 +238,13 @@ nav{
 .projectimg img{
 
     width: 100% !important;
+
+}
+#excellentformobile{
+color: white;
 }
 .projectimg{
+    margin-bottom: 0px;
     position: relative !important;
 width: 100% !important;
 }
@@ -268,7 +297,7 @@ z-index: 22222;
 #projectid{
     background: linear-gradient(
         -22deg
-        ,#e89999 60%,#00000000 0%);
+        ,#774b4b 60%,#00000000 0%);
         background-attachment: fixed;
 }
 /* project list ending */

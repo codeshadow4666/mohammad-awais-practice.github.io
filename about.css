@@ -77,9 +77,9 @@ nav ul li a{
     left: 0%;
     height: 100%;
     width: 100%;
-    background-color: rgb(64 64 64 / 29%);
+    background-color: transparent;
     border-bottom: 2px solid white;
-    border-top: 2px solid white;
+   
     z-index: 1;
     transform: scale(1.2);
     opacity: 0;
